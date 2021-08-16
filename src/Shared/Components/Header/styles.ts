@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import colors from '../../Global/Styles/colors';
 
 export const Container = styled.header`
@@ -7,6 +7,12 @@ export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 700px) {
+    & {
+      height: 50px;
+    }
+  }
 `;
 
 export const ActionsLeft = styled.div`
@@ -14,6 +20,18 @@ export const ActionsLeft = styled.div`
   align-items: center;
   flex: 1;
   padding-left: 30px;
+
+  @media screen and (max-width: 700px) {
+    & {
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      display: none !important;
+    }
+  }
 
   nav {
     display: flex;
@@ -43,6 +61,12 @@ export const ActionsRight = styled.div`
   flex: 1;
   justify-content: flex-end;
   padding-right: 30px;
+
+  @media screen and (max-width: 700px) {
+    & {
+      display: none !important;
+    }
+  }
 
   img {
     padding: 0 20px 0 0;

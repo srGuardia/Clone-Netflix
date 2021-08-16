@@ -15,6 +15,8 @@ import filme4 from '../../Assets/img/filme4.png';
 import netflix1 from '../../Assets/img/netflix1.png';
 import netflix2 from '../../Assets/img/netflix2.png';
 import netflix3 from '../../Assets/img/netflix3.png';
+import info from '../../Assets/img/info.png';
+import assistir from '../../Assets/img/assistir.png';
 
 export const Main = () => (
   <Container>
@@ -25,10 +27,9 @@ export const Main = () => (
       </figure>
 
       <article>
-        <figure>
+        <h1>
           <img src={titulo_destaque} alt='Stranger Things' />
-          <figcaption>Título destaque</figcaption>
-        </figure>
+        </h1>
 
         <p>
           Will, um garoto de 12 anos, desaparece em Montauk, Long Island.
@@ -39,8 +40,14 @@ export const Main = () => (
       </article>
 
       <div>
-        <a href='#'>Assistir</a>
-        <a href='#'>Mais informações</a>
+        <a href='#'>
+          <img src={assistir} alt='Play' />
+          Assistir
+        </a>
+        <a href='#'>
+          <img src={info} alt='Info' />
+          Mais informações
+        </a>
       </div>
     </Destaque>
 

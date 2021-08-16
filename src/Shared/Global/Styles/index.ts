@@ -9,6 +9,13 @@ box-sizing: border-box;
 width: 100vw;
 height: 100vh;
 background-color: ${colors.dark};
+font-family: 'Roboto', sans-serif;
+color: ${colors.white};
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
 }
 
 figure {
@@ -28,9 +35,4 @@ ul li {
     display: block;
     float: left;
   }
-
-* {
-    font-family: 'Roboto', sans-serif;
-    color: ${colors.white};
-}
 `;
