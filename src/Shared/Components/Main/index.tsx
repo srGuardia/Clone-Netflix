@@ -40,11 +40,11 @@ export const Main = () => (
       </article>
 
       <div>
-        <a href='#'>
+        <a href='/'>
           <img src={assistir} alt='Play' />
           Assistir
         </a>
-        <a href='#'>
+        <a href='/'>
           <img src={info} alt='Info' />
           Mais informações
         </a>
