@@ -20,6 +20,7 @@ import assistir from '../../Assets/img/assistir.png';
 
 export const Main = () => (
   <Container>
+    oi
     <Destaque>
       <figure>
         <img src={destaque} alt='Stranger Things' />
